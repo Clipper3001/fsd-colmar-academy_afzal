@@ -52,9 +52,9 @@ nav {
 
 /* Set up logo styles */
 .logo {
-    height: 2rem;
+    height: 3rem;
     margin-left: 1.5rem;
-    border: 1px solid black;
+    
 }
 
 .logoname {
@@ -90,12 +90,50 @@ nav ul li:last-child {
 }
 
 
-nav>a {
+nav > a {
     display: flex;
     align-items: center;
 }
 
 /* Set up header area */
+header {
+    display: flex;
+    align-items: center;
+    /* vert ctr the header */
+    justify-content: center;
+    /* horizontal centering the header */
+    background-color: #d8d8d8;
+}
+
+
+
+.imagecontainer {
+    padding: 2rem 0 2rem 1.5rem
+        /* top=2rem right=0rem bottom=2rem left=1.5rem */
+
+}
+
+header > img {
+    max-width: 100%;
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 18rem;
+    padding-left: 1.5rem;
+}
+
+header > div > h1 {
+font-size: xx-large;
+}
+
+header > div > h2 {
+font-size: x-large;
+
+}
+
 
 
 /* hover effect for call to action link */
