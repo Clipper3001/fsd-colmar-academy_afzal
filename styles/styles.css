@@ -22,7 +22,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    padding-left: 1.5rem;
+
 
 }
 
@@ -31,7 +31,7 @@ a {
     grid-template-columns: [full-start] 0.6fr [center-end center-start] 0.4fr [full-end];
     /* start to center to end  */
     grid-template-rows: repeat(6, min-content);
-    font-size: x-large;
+
 }
 
 
@@ -88,9 +88,7 @@ nav ul {
 }
 
 nav ul li {
-    justify-content: space-evenly;
-    display: flex;
-
+    padding-right: 1rem;
 }
 
 nav ul li:last-child {
@@ -108,7 +106,7 @@ nav>a {
 header {
     display: flex;
     align-items: center;
-    /* vert ctr the header */
+    /* vert alignment */
     justify-content: center;
     /* horizontal centering the header */
     background-color: #d8d8d8;
@@ -121,11 +119,10 @@ header {
 
 }
 
+
 header>img {
-    display: flex;
     max-width: 100%;
     height: auto;
-    padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
 
@@ -333,17 +330,17 @@ footer>ul>li:last-child {
 
 }
 
-/* Hide nav mobile */
-#nav-mobile,
-.events>.event-block>.event-img-mobile {
-    display: block;
 
-    display: none;
-}
 
 
 /* Hide events mobile */
 
+/* Hide nav mobile */
+#nav-mobile,
+.events>.event-block>.event-img-mobile {
+    display: block;
+    display: none;
+}
 
 
 /** ********************** **/
@@ -463,14 +460,27 @@ footer>ul>li:last-child {
 
     }
 
+    /* Start of start learning */
+
+.learning {
+display: grid;
+
+
+}
+    
+
+
+
+
+
+
+
+
 }
 
 
 
 
 
-
-
-
-/* *********************** */
-/** End of Mobile Section **/
+    /* *********************** */
+    /** End of Mobile Section **/
