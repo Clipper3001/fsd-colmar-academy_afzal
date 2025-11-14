@@ -106,7 +106,7 @@ nav>a {
 
 /* Set up header area */
 header {
-    display: block;
+    display: flex;
     align-items: center;
     /* vert ctr the header */
     justify-content: center;
@@ -138,7 +138,7 @@ header>div {
 }
 
 header>div>h1 {
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
 header>div>h2 {
@@ -256,7 +256,8 @@ header>div>a:hover {
 
 .events>.event-block>div>p,
 .events>.event-block>div>a {
-    font-size: small;
+    font-size: large;
+    font-weight: lighter;
 }
 
 .events>.event-block>div>a {
@@ -304,9 +305,17 @@ footer>ul>li:last-child {
 
 }
 
+/* Hide nav mobile */
+#nav-mobile,
+.events>.event-block>.event-img-mobile {
+    display: block;
+
+    display: none;
+}
 
 
 /* Hide events mobile */
+
 
 
 /** ********************** **/
@@ -319,7 +328,121 @@ footer>ul>li:last-child {
 /** *********************** **/
 
 /* if the width of screen is 640px and below (aka 40rem x 16px) */
-@media screen and (max-width: 40rem) {}
+@media screen and (max-width: 40rem) {
+
+    nav,
+    .practice {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        grid-column: full-start / full-end;
+        justify-content: space-around;
+    }
+
+    header {
+        display: grid;
+        grid-column: full-start / full-end;
+    }
+
+    .imagecontainer {
+        padding: 0;
+
+    }
+
+    header>div {
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    header>div>h1 {
+        font-size: 3rem;
+        padding: 2rem 0 2rem 1rem;
+    }
+
+    header>div>h2 {
+        font-size: x-large;
+        font-weight: normal;
+        padding-bottom: 1.5rem;
+    }
+
+    header>div>a {
+        opacity: 0.5;
+
+    }
+
+    .events {
+        display: grid;
+        grid-column: full-start / full-end;
+
+
+    }
+
+    .events>.event-block {
+
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .events>.event-block:first-child>img {
+        margin-top: 0;
+    }
+
+
+    .events>.event-block>img {
+        display: none;
+    }
+
+    .events>.event-block>.event-img-mobile {
+        display: block;
+
+    }
+
+    .events>.event-block .event-text {
+        width: auto;
+        height: auto;
+    }
+
+    .events>.event-block .event-text>h3 {
+        font-size: xx-large;
+    }
+
+    .events>.event-block>div>p,
+    .events>.event-block>div>a {
+        font-size: large;
+        font-weight: lighter;
+
+    }
+
+    footer ul {
+        display: none
+    }
+
+    /* Remove background color for event 3 "Special Guest Lecture" */
+
+    .events {
+        border-left: none;
+    }
+
+    .events .event-block:last-child {
+        background-color: #fff;
+
+    }
+
+}
+
+
+
+
+
+
+
 
 /* *********************** */
 /** End of Mobile Section **/
