@@ -57,26 +57,33 @@ nav {
 .logo {
     height: 3rem;
     margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+
 }
 
 .logoname {
     text-transform: uppercase;
+    align-content: center;
+    justify-content: center;
 }
 
 .logoname-bold {
     font-weight: bold;
     color: #484848;
+    font-size: 2rem;
+    align-content: center;
+    justify-content: center;
+
 }
 
 .logoname-light {
     font-weight: lighter;
     color: #aaa;
+    font-size: 2rem;
+    align-content: center;
+    justify-content: center;
 }
-
-
-
-
-
 
 
 /* Set up navigation links' styles */
@@ -89,6 +96,8 @@ nav ul {
 
 nav ul li {
     padding-right: 1rem;
+    font-size: 2rem;
+    padding-top: 1rem;
 }
 
 nav ul li:last-child {
@@ -98,7 +107,9 @@ nav ul li:last-child {
 
 nav>a {
     display: flex;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
+
 }
 
 
@@ -110,12 +121,13 @@ header {
     justify-content: center;
     /* horizontal centering the header */
     background-color: #d8d8d8;
+    width: 100%;
 }
 
 
 .imagecontainer {
-    padding: 2rem 1.5rem 2rem 1.5rem
-        /* top=2rem right=0rem bottom=2rem left=1.5rem */
+    padding: 2rem 1.5rem 2rem 1.5rem;
+
 
 }
 
@@ -123,6 +135,8 @@ header {
 header>img {
     max-width: 100%;
     height: auto;
+
+
 }
 
 
@@ -135,38 +149,30 @@ header>div {
 }
 
 header>div>h1 {
-    font-size: xx-large;
+    font-size: 4rem;
 }
 
 header>div>h2 {
-    font-size: x-large;
+    font-size: 2rem;
 
 }
 
-header>div>a {
-    background-color: #484848;
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-    /* topbott=8px Left Right=0px */
-    text-align: center;
-    color: #fff;
-    font-size: large;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-
+header>div>button {
+    color: white;
+    background-color: #4a4a4a;
+    border: unset;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
 }
 
 header>div>a:hover {
     color: rgb(red, green, blue);
     background-color: rgb(red, green, blue);
-
 }
 
-
-
-
 /* hover effect for call to action link */
+
 
 
 /* Set up practice section */
@@ -191,14 +197,14 @@ header>div>a:hover {
 
 .practice>.practice-text>h1 {
     margin: 2rem 0 1.5rem 0;
-    font-size: xx-large;
+    font-size: 3rem;
 
 }
 
 
 
 .practice>.practice-text>p {
-    font-size: small;
+    font-size: x-large;
     font-weight: lighter;
 
 }
@@ -206,6 +212,7 @@ header>div>a:hover {
 .practice>.practice-text>p>span {
     display: block;
     padding: 2rem 0;
+    font-size: 1rem;
 
 }
 
@@ -229,6 +236,7 @@ header>div>a:hover {
 
 .events .event-block:last-child {
     background-color: #d8d8d8;
+    margin-bottom: 2rem;
 }
 
 
@@ -243,17 +251,18 @@ header>div>a:hover {
 }
 
 .events>.event-block>div>h3 {
-    font-size: medium;
+    font-size: x-large;
 }
 
 .events>.event-block .event-text {
     margin: 2rem;
+
 }
 
 
 .events>.event-block>div>p,
 .events>.event-block>div>a {
-    font-size: large;
+    font-size: x-large;
     font-weight: lighter;
 }
 
@@ -264,12 +273,211 @@ header>div>a:hover {
 
 .events>.event-block>.event-text>p {
     margin: 0.5rem 0;
+}
+
+
+
+
+
+/* start of the learninig section */
+#start-learning {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0 2rem 0;
+    background-color: #d8d8d8;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-column: full-start / full-end;
 
 }
 
-/* Start of "Start Learning Section */
+#start-learning>h1 {
+    margin: 0 auto 2rem auto;
+    font-size: 3rem;
+}
+
+#start-learning-line1 {
+    display: flex;
+    width: calc(100% - 9rem);
+    margin-bottom: 2rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    justify-content: space-evenly;
+}
+
+#start-learning-line1>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    max-width: fit-content;
+}
+
+#start-learning-line1-center {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#start-learning-line1>div>img {
+    width: 100%;
+    height: auto;
+}
+
+#start-learning-line2 {
+    display: flex;
+    width: calc(100% - 9rem);
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    justify-content: space-evenly;
+}
+
+#start-learning-line2>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    max-width: fit-content;
+}
+
+#start-learning-line2-center {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#start-learning-line2>div>img {
+    width: 100%;
+    height: auto;
+}
+
+.start-learning-text {
+    text-align: left;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.start-learning-text>h2 {
+    margin-bottom: 1rem;
+    font-size: x-large;
+}
+
+.start-learning-text>p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+#start-learning-mobile {
+    display: none;
+}
 
 
+
+
+
+
+
+
+
+/* Start of Thesis */
+#thesis {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    grid-column: full-start / full-end;
+
+}
+
+.thesis-title  {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    grid-column: full-start / full-end;
+    
+}
+
+.thesis-title > h1 {
+    font-size: 3rem;
+}
+
+#thesis-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#thesis-left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+#thesis-left-text > h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+#thesis-left-text > p {
+    margin-bottom: 0.5rem;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+/* Thesis right elements */
+
+#thesis-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#thesis-right1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #d8d8d8;
+}
+
+#thesis-right2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+#thesis-right img {
+  width: 35%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.thesis-right-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-right-text >h3{
+    font-size: x-large;
+}
+
+.thesis-right-text >p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
 
 
 
@@ -462,25 +670,25 @@ footer>ul>li:last-child {
 
     /* Start of start learning */
 
-.learning {
-display: grid;
+    .learning {
+        display: grid;
+
+
+    }
+
+
+
+
+
+
+
 
 
 }
-    
 
 
 
 
 
-
-
-
-}
-
-
-
-
-
-    /* *********************** */
-    /** End of Mobile Section **/
+/* *********************** */
+/** End of Mobile Section **/
